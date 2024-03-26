@@ -6,3 +6,52 @@
 #content {
     margin: 0 auto;
 }
+#background {
+    height: 725px;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding:35px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+main section{
+    text-align: center;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+body {
+    background-color: #8E0428;
+    color:#F9B5AC;
+    font-family: "Arsenal","Figtree","Sarabun";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+header {
+    background-color: #8E0428;
+    color:#F9B5AC;
+    font-family: "Shrikhand", "Arsenal","Figtree";
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.home-title {
+    font-family: "Shrikhand", "Arsenal","Figtree";
+    font-size: 2em;
+    margin-top: 10px;
+}
+nav a:hover {
+    background-color: #F9F9ED;
+    color:#EE7674;
+}
