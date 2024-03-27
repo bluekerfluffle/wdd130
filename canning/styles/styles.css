@@ -20,46 +20,28 @@ nav {
     overflow: hidden;
     background-color: #EE7674;
 }
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #EE7674; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #8E0428;
-    display: block;
-  }
-.sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
 #veggies-msg h1 {
     text-align: center;
 }
 main section{
     text-align: center;
 }
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
   
 .home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.child-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 .text{
     grid-row:2/6;
     grid-column: 3/9;
+}
+.text-child1{
+    grid-row:2/7;
+    grid-column: 2/8;
 }
 body {
     background-color: #8E0428;
@@ -143,7 +125,19 @@ footer .social img {
     grid-column: 4/8;
     width:100%;
 }
+#bread{
+    grid-row: 8/10;
+    grid-column: 6/7;
+    width: 100%;
+    height: 468px;
 
+}
+#jars{
+    grid-row: 8/10;
+    grid-column: 2/3;
+    width: 100%;
+   
+}
             
 
 
@@ -185,7 +179,3 @@ footer .social img {
         margin-top: 25px;
     }
 }
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
