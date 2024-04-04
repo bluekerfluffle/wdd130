@@ -25,14 +25,8 @@ nav {
 }
 main section{
     text-align: center;
-    width: 100%;
 }
-  
 .home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-.child-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
