@@ -17,16 +17,25 @@ nav a {
 nav {
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
-    background-color: #EE7674;
+
 }
 #veggies-msg h1 {
     text-align: center;
 }
 main section{
     text-align: center;
+    width: 100%;
+}
+#h1{
+   font-size: 35px; 
+   font-family: "Shrikhand", "Arsenal","Figtree";
+
 }
 .home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.child-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -38,6 +47,12 @@ main section{
 .text-child1{
     grid-row:2/7;
     grid-column: 2/8;
+    width: 100%;
+}
+.text2{
+    grid-column: 2/7;
+    grid-row: 5/10;
+    width: 100%;
 }
 body {
     background-color: #8E0428;
@@ -58,6 +73,7 @@ header {
     font-family: "Shrikhand", "Arsenal","Figtree";
     font-size: 2em;
     margin-top: 10px;
+    text-align: center;
 }
 nav a:hover {
     background-color: #F9F9ED;
@@ -110,42 +126,57 @@ footer .social img {
     z-index: -1;
     width: 100%;
 }
-#veggies-img{
-    grid-column: 1/7;
-    grid-row: 1/3;
-    width:100%;
-}
 #veggies-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 175px;
     color:#F9F9ED
 }
-#close-up{
-    grid-row: 8/10;
-    grid-column: 4/8;
+
+#veggies-img{
+    grid-column: 1/7;
+    grid-row: 1/3;
     width:100%;
+}
+
+#close-up{
+    grid-row: 9/10;
+    grid-column: 4/7;
+    width:100%;
+}
+
+#jars{
+    grid-row: 8/10;
+    grid-column: 2/3;
+    width: 100%;
+
 }
 #bread{
     grid-row: 8/10;
     grid-column: 6/7;
     width: 100%;
     height: 468px;
-
 }
-#jars{
-    grid-row: 8/10;
+#hand-drawn{
     grid-column: 2/3;
-    width: 100%;
-   
+    grid-row: 2/4;
+    height: 100%;
 }
+#smile{
+    grid-column: 6/7;
+    grid-row: 2/4;
+    grid-row: 2/4;
+    width: 100%;
+    height: 100%;
+}
+
             
 
 
 
 
 @media screen and (max-width: 900px) {
-    #veggies, .home-grid {
+    #veggies, .home-grid, .child-grid {
         display: block;
         height: auto;
     }
@@ -168,15 +199,20 @@ footer .social img {
     .home-title {
         font-size: 25px;
     }
+    .text,.text-child1,.text2{
+        width: 100%;
+        margin: 125px;
+    }
     #background {
         display: none;
     }
-    .close-up {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
+    #close-up,#jars,#bread,#hand-drawn,#smile{
+        width: 50px;
     }
+    }
+
     footer {
         margin-top: 25px;
     }
+   
 }
