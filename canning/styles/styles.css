@@ -161,6 +161,7 @@ footer .social img {
     grid-column: 2/3;
     grid-row: 2/4;
     height: 100%;
+    width:100%
 }
 #smile{
     grid-column: 6/7;
@@ -177,7 +178,7 @@ footer .social img {
 
 @media screen and (max-width: 900px) {
     #veggies, .home-grid, .child-grid{
-        display: grid;
+        display: block;
         height: auto;
     }
     nav, footer {
@@ -195,6 +196,9 @@ footer .social img {
     }
     #veggies-msg h1 {
         color: #6f7364;
+    }
+    #veggies, #hand-drawn, #smile, #jars, #bread, #close-up{
+        width:100%;
     }
     .home-title {
         font-size: 25px;
